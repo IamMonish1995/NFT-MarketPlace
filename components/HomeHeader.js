@@ -18,11 +18,21 @@ const HomeHeader = ({ onSearch }) => {
           alignItems: "center",
         }}
       >
-        <Image
+        {/* <Image
           source={assets.logo}
           resizeMode="contain"
           style={{ width: 90, height: 25 }}
-        />
+        /> */}
+        <Text
+          style={{
+            fontFamily: FONTS.bold,
+            fontSize: SIZES.large,
+            color: COLORS.white,
+            marginTop: SIZES.base / 2,
+          }}
+        >
+          Payment App
+        </Text>
 
         <View style={{ width: 45, height: 45 }}>
           <Image
@@ -52,10 +62,10 @@ const HomeHeader = ({ onSearch }) => {
             color: COLORS.white,
           }}
         >
-          Hello Victoria 👋
+          Hello 👋
         </Text>
 
-        <Text
+        {/* <Text
           style={{
             fontFamily: FONTS.bold,
             fontSize: SIZES.large,
@@ -64,7 +74,7 @@ const HomeHeader = ({ onSearch }) => {
           }}
         >
           Let’s find masterpiece Art
-        </Text>
+        </Text> */}
       </View>
 
       <View style={{ marginTop: SIZES.font }}>

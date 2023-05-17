@@ -4,7 +4,6 @@ import { COLORS, NFTData } from "../constants";
 import { NFTcard, HomeHeader, FocusedStatusBar } from "../components";
 const Home = () => {
 
-
     const [nftData, setNftData] = useState(NFTData);
 
     const handleSearch = (value) => {
@@ -13,7 +12,7 @@ const Home = () => {
       }
   
       const filteredData = NFTData.filter((item) =>
-        item.name.toLowerCase().includes(value.toLowerCase())
+        item.creator.toLowerCase().includes(value.toLowerCase())
       );
   
       if (filteredData.length === 0) {

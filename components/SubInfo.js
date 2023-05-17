@@ -13,9 +13,9 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
           color: COLORS.primary,
         }}
       >
-        {title}
+        {subTitle}
       </Text>
-      <Text
+      {/* <Text
         style={{
           fontFamily: FONTS.regular,
           fontSize: subTitleSize,
@@ -23,7 +23,7 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
         }}
       >
         by {subTitle}
-      </Text>
+      </Text> */}
     </View>
   );
 };
@@ -31,11 +31,6 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
 export const EthPrice = ({ price }) => {
   return (
     <View style={{ flexDirection: "row", alignItems: "center" }}>
-      <Image
-        source={assets.eth}
-        resizeMode="contain"
-        style={{ width: 20, height: 20, marginRight: 2 }}
-      />
       <Text
         style={{
           fontFamily: FONTS.medium,
@@ -43,7 +38,7 @@ export const EthPrice = ({ price }) => {
           color: COLORS.primary,
         }}
       >
-        {price}
+        TAX : ₹ {price}
       </Text>
     </View>
   );

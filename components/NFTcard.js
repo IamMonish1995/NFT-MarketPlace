@@ -19,7 +19,7 @@ const NFTCard = ({ data }) => {
         ...SHADOWS.dark,
       }}
     >
-      <View
+      {/* <View
         style={{
           width: "100%",
           height: 250,
@@ -37,9 +37,9 @@ const NFTCard = ({ data }) => {
         />
 
         <CircleButton imgUrl={assets.heart} right={10} top={10} />
-      </View>
+      </View> */}
 
-      <SubInfo />
+      {/* <SubInfo /> */}
 
       <View style={{ width: "100%", padding: SIZES.font }}>
         <NFTTitle
