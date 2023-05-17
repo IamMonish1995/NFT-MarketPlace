@@ -4,6 +4,7 @@ import { useFonts } from "expo-font";
 
 import Home from "./screens/home";
 import Details from "./screens/details";
+import Payments from "./screens/paymentScreen";
 
 
 
@@ -27,6 +28,7 @@ const App = () => {
       >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="Payments" component={Payments} />
       </Stack.Navigator>
     </NavigationContainer>
   );

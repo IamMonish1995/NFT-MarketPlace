@@ -95,7 +95,7 @@ const HomeHeader = ({ onSearch }) => {
             style={{ width: 20, height: 20, marginRight: SIZES.base }}
           />
           <TextInput
-            placeholder="Search NFTs"
+            placeholder="Search Customer"
             style={{ flex: 1 }}
             onChangeText={onSearch}
           />

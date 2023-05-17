@@ -1,8 +1,22 @@
 import React from "react";
-import { View, Text, SafeAreaView, Image, StatusBar, FlatList } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  Image,
+  StatusBar,
+  FlatList,
+} from "react-native";
 
 import { COLORS, SIZES, assets, SHADOWS, FONTS } from "../constants";
-import { CircleButton, RectButton, SubInfo, DetailsDesc, DetailsBid, FocusedStatusBar } from "../components";
+import {
+  CircleButton,
+  RectButton,
+  SubInfo,
+  DetailsDesc,
+  DetailsBid,
+  FocusedStatusBar,
+} from "../components";
 
 const DetailsHeader = ({ data, navigation }) => (
   <View style={{ width: "100%", height: 100 }}>
@@ -30,6 +44,8 @@ const DetailsHeader = ({ data, navigation }) => (
 const Details = ({ route, navigation }) => {
   const { data } = route.params;
 
+  const handlePay = () => {};
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <FocusedStatusBar
@@ -50,7 +66,13 @@ const Details = ({ route, navigation }) => {
           zIndex: 1,
         }}
       >
-        <RectButton text={"Pay Now"} minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
+        <RectButton
+          handlePress={() => navigation.navigate("Payments", {amount: data.price })}
+          text={"Pay Now"}
+          minWidth={170}
+          fontSize={SIZES.large}
+          {...SHADOWS.dark}
+        />
       </View>
 
       <FlatList
