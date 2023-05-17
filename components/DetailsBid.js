@@ -17,29 +17,28 @@ const DetailsBid = ({ bid }) => {
       }}
       key={bid.id}
     >
-      <Image
+      {/* <Image
         source={bid.image}
         resizeMode="contain"
         style={{ width: 48, height: 48 }}
-      />
+      /> */}
 
-      <View
+      {/* <View
         style={{
           flex: 1,
           alignItems: "center",
           paddingHorizontal: SIZES.base,
         }}
-      >
+      > */}
         <Text
           style={{
             fontFamily: FONTS.semiBold,
             fontSize: SIZES.small,
             color: COLORS.primary,
           }}
-        >
-          Bid placed by {bid.name}
-        </Text>
-        <Text
+        >{bid.date}
+         </Text>
+        {/* <Text
           style={{
             fontFamily: FONTS.regular,
             fontSize: SIZES.small - 2,
@@ -47,10 +46,9 @@ const DetailsBid = ({ bid }) => {
             marginTop: 3,
           }}
         >
-          {bid.date}
-        </Text>
-      </View>
-
+          Payed by {bid.name}
+        </Text> */}
+      {/* </View> */}
       <EthPrice price={bid.price} />
     </View>
   );

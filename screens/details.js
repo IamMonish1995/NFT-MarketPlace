@@ -5,12 +5,12 @@ import { COLORS, SIZES, assets, SHADOWS, FONTS } from "../constants";
 import { CircleButton, RectButton, SubInfo, DetailsDesc, DetailsBid, FocusedStatusBar } from "../components";
 
 const DetailsHeader = ({ data, navigation }) => (
-  <View style={{ width: "100%", height: 373 }}>
-    <Image
+  <View style={{ width: "100%", height: 100 }}>
+    {/* <Image
       source={data.image}
       resizeMode="cover"
       style={{ width: "100%", height: "100%" }}
-    />
+    /> */}
 
     <CircleButton
       imgUrl={assets.left}
@@ -19,11 +19,11 @@ const DetailsHeader = ({ data, navigation }) => (
       top={StatusBar.currentHeight + 10}
     />
 
-    <CircleButton
+    {/* <CircleButton
       imgUrl={assets.heart}
       right={15}
       top={StatusBar.currentHeight + 10}
-    />
+    /> */}
   </View>
 );
 
@@ -50,7 +50,7 @@ const Details = ({ route, navigation }) => {
           zIndex: 1,
         }}
       >
-        <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
+        <RectButton text={"Pay Now"} minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
       </View>
 
       <FlatList
@@ -64,7 +64,7 @@ const Details = ({ route, navigation }) => {
         ListHeaderComponent={() => (
           <React.Fragment>
             <DetailsHeader data={data} navigation={navigation} />
-            <SubInfo />
+            {/* <SubInfo /> */}
             <View style={{ padding: SIZES.font }}>
               <DetailsDesc data={data} />
 
@@ -76,7 +76,7 @@ const Details = ({ route, navigation }) => {
                     color: COLORS.primary,
                   }}
                 >
-                  Current Bid
+                  Payment History
                 </Text>
               )}
             </View>
