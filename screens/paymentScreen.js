@@ -23,7 +23,7 @@ const Payments = ({ route, navigation }) => {
     const razorpayCheckoutURL =
       `https://api.razorpay.com/v1/checkout/embedded?` +
       `key_id=rzp_test_qYweUy4ve385yD` +
-      `&amount=100` +
+      `&amount=${amount*100}` +
       `&currency=INR` +
       `&name=Sample%20App` +
       `&description=Sample%20Description` +
