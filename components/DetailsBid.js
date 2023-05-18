@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
 
-import { EthPrice } from "./SubInfo";
+import { EthPrice2 } from "./SubInfo";
 import { COLORS, SIZES, FONTS } from "../constants";
 
 const DetailsBid = ({ bid }) => {
@@ -49,7 +49,7 @@ const DetailsBid = ({ bid }) => {
           Payed by {bid.name}
         </Text> */}
       {/* </View> */}
-      <EthPrice price={bid.price} />
+      <EthPrice2 price={bid.price} />
     </View>
   );
 };

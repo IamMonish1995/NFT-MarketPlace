@@ -38,7 +38,22 @@ export const EthPrice = ({ price }) => {
           color: COLORS.primary,
         }}
       >
-        TAX : ₹ {price}
+       Pending TAX : ₹ {price}
+      </Text>
+    </View>
+  );
+};
+export const EthPrice2 = ({ price }) => {
+  return (
+    <View style={{ flexDirection: "row", alignItems: "center" }}>
+      <Text
+        style={{
+          fontFamily: FONTS.medium,
+          fontSize: SIZES.font,
+          color: COLORS.primary,
+        }}
+      >
+      Paid TAX : ₹ {price}
       </Text>
     </View>
   );

@@ -6,6 +6,7 @@ import {
   People,
   EndDate,
   EthPrice,
+  EthPrice2,
   NFTTitle,
 } from "./SubInfo";
 import { CircleButton, RectButton } from "./Button";
@@ -21,6 +22,7 @@ export {
   RectButton,
   CircleButton,
   EthPrice,
+  EthPrice2,
   NFTTitle,
   DetailsBid,
   DetailsDesc,
